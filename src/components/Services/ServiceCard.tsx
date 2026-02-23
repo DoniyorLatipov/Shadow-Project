@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './Services.module.css';
 import type { ServiceDescriptionListProps } from './ServiceDescriptionList';
 import ServiceDescriptionList from './ServiceDescriptionList';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import classes from './Header.module.css';
 
 import Container from '../../UI/Container/Container';

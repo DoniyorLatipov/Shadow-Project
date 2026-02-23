@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import classes from './Services.module.css';
 import Marquee from '../Marquee/Marquee';
 import Container from '../../UI/Container/Container';

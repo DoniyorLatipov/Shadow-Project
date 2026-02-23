@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './Contacts.module.css';
 import Container from '../../UI/Container/Container';
 import Button from '../../UI/Buttons/Button';
@@ -8,7 +7,6 @@ import telegramIcon from '../../assets/telegram-icon.svg';
 import maxIcon from '../../assets/max-icon.svg';
 
 import clsx from 'clsx';
-import AnchorButton from '../../UI/AnchorButton/AnchorButton';
 
 export default function Contacts() {
   return (

@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './Hero.module.css';
 import Container from '../../UI/Container/Container';
 import Button from '../../UI/Buttons/Button';
