@@ -1,0 +1,102 @@
+.contacts {
+  padding: 120px 0 100px;
+}
+
+.contactsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  /* flex-wrap: wrap; */
+}
+
+.contactsBlock {
+  flex: 0 0 fit-content;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  color: #242424;
+  margin-bottom: 60px;
+}
+
+.contactsList {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #6b7280;
+  padding-bottom: 13px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 121%;
+  letter-spacing: -0.5px;
+  color: #2c3e50;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.logoBlock {
+  gap: 70px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+}
+
+.logo {
+  width: 100%;
+  height: fit-content;
+}
+
+.callButton {
+  font-size: 24px;
+  padding: 0 55px !important;
+  margin-right: 10px;
+}
+
+.iconButton {
+  width: 80px !important;
+  height: 80px !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .contactsContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactsContainer {
+    gap: 50px;
+  }
+
+  .logoBlock {
+    gap: 25px;
+  }
+
+  .contacts {
+    padding-bottom: 200px;
+  }
+}

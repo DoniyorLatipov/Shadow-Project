@@ -1,0 +1,27 @@
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 60s linear infinite;
+}
+
+.logo {
+  width: 490px;
+  height: 35px;
+  height: auto;
+  margin-right: 120px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,19 @@
+.button {
+  height: 55px;
+  padding: 0 35px;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  background: #242424;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -1px;
+  color: #fff;
+  border: none;
+  margin: 0 10px;
+}
+
+.imgUp {
+  rotate: 180deg;
+}
