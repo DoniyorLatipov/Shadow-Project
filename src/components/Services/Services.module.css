@@ -55,8 +55,8 @@
   right: 0;
   top: -87px; /* section padding */
   transform: translateY(-100%);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 .anchorButtonToContacts {
@@ -64,8 +64,8 @@
   left: 0;
   bottom: -50px; /* section padding */
   transform: translateY(100%);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
 @media (max-width: 1200px) {
