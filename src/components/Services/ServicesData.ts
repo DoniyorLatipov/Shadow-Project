@@ -1,19 +1,23 @@
+// servicesData.ts
+import checkIcon from '../../assets/check-icon.svg';
+import waterIcon from '../../assets/water-icon.svg';
+import dryIcon from '../../assets/dry-icon.svg';
+import toolIcon from '../../assets/tool-icon.svg';
+import toolsIcon from '../../assets/tools-icon.svg';
+import shieldIcon from '../../assets/shield-icon.svg';
+import homeIcon from '../../assets/home-icon.svg';
+import cleanIcon from '../../assets/clean-icon.svg';
+
 export const servicesData = [
   {
     title: 'Демонтаж и обратный монтаж из профиля EuroKRAAB',
     descriptionList: [
       {
-        icon: {
-          iconSrc: '/src/assets/check-icon.svg',
-          alt: 'Демонтаж с сохранением полотна',
-        },
+        icon: { iconSrc: checkIcon, alt: 'Демонтаж с сохранением полотна' },
         text: 'Демонтаж с сохранением полотна',
       },
       {
-        icon: {
-          iconSrc: '/src/assets/check-icon.svg',
-          alt: 'Сохраняем стены и материал',
-        },
+        icon: { iconSrc: checkIcon, alt: 'Сохраняем стены и материал' },
         text: 'Сохраняем стены и материал',
       },
     ],
@@ -22,24 +26,15 @@ export const servicesData = [
     title: 'Слив воды',
     descriptionList: [
       {
-        icon: {
-          iconSrc: '/src/assets/water-icon.svg',
-          alt: 'После затопления сливаем воду',
-        },
+        icon: { iconSrc: waterIcon, alt: 'После затопления сливаем воду' },
         text: 'После затопления сливаем воду',
       },
       {
-        icon: {
-          iconSrc: '/src/assets/dry-icon.svg',
-          alt: 'Просушиваем',
-        },
+        icon: { iconSrc: dryIcon, alt: 'Просушиваем' },
         text: 'Просушиваем',
       },
       {
-        icon: {
-          iconSrc: '/src/assets/tool-icon.svg',
-          alt: 'Восстанавливаем геометрию потолка',
-        },
+        icon: { iconSrc: toolIcon, alt: 'Восстанавливаем геометрию потолка' },
         text: 'Восстанавливаем геометрию потолка',
       },
     ],
@@ -48,17 +43,11 @@ export const servicesData = [
     title: 'Устранение порезов',
     descriptionList: [
       {
-        icon: {
-          iconSrc: '/src/assets/tools-icon.svg',
-          alt: 'Устраняем локальные повреждения',
-        },
+        icon: { iconSrc: toolsIcon, alt: 'Устраняем локальные повреждения' },
         text: 'Устраняем локальные повреждения',
       },
       {
-        icon: {
-          iconSrc: '/src/assets/shield-icon.svg',
-          alt: 'Без заплаток',
-        },
+        icon: { iconSrc: shieldIcon, alt: 'Без заплаток' },
         text: 'Без заплаток',
       },
     ],
@@ -67,17 +56,11 @@ export const servicesData = [
     title: 'Монтаж скрытой гардины',
     descriptionList: [
       {
-        icon: {
-          iconSrc: '/src/assets/home-icon.svg',
-          alt: 'Устанавливаем скрытую гардину',
-        },
+        icon: { iconSrc: homeIcon, alt: 'Устанавливаем скрытую гардину' },
         text: 'Устанавливаем скрытую гардину в уже готовый потолок',
       },
       {
-        icon: {
-          iconSrc: '/src/assets/clean-icon.svg',
-          alt: 'Без полного демонтажа',
-        },
+        icon: { iconSrc: cleanIcon, alt: 'Без полного демонтажа' },
         text: 'Без полного демонтажа и лишней пыли',
       },
     ],
