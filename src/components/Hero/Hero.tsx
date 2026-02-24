@@ -11,7 +11,9 @@ export default function Hero() {
           Работаем с готовыми потолками, сложными случаями и профилем EuroKRAAB по Санкт-Петербург и
           Ленинградской области
         </p>
-        <Button className={classes.callButton}>Позвонить</Button>
+        <Button className={classes.callButton}>
+          <a href="tel:+79643749631">Позвонить</a>
+        </Button>
       </Container>
     </div>
   );

@@ -34,32 +34,43 @@ export default function Header() {
   return (
     <div className={clsx(classes.header, isActive && classes.headerActive)}>
       <Container maxWidth="1780px" className={classes.headerContainer}>
-        <picture>
-          <source media="(max-width: 640px)" srcSet={logoMobile} />
-          <img
-            src={logoDesktop}
-            className={classes.logo}
-            width="240"
-            height="77"
-            alt="Shadow Project"
-          />
-        </picture>
+        <a href="/">
+          <picture>
+            <source media="(max-width: 640px)" srcSet={logoMobile} />
+            <img
+              src={logoDesktop}
+              className={classes.logo}
+              width="240"
+              height="77"
+              alt="Shadow Project"
+            />
+          </picture>
+        </a>
         <div className={classes.buttonContainer}>
           <Button className={classes.iconButton}>
-            <img src={telegramIcon} height="48" width="48" alt="Телеграм" />
+            <a href="https://t.me/mihail_shadow_project" target="_blank">
+              <img src={telegramIcon} height="48" width="48" alt="Телеграм" />
+            </a>
           </Button>
           <Button className={classes.iconButton}>
-            <img src={maxIcon} height="48" width="48" alt="Макс" />
+            <a
+              href="https://max.ru/u/f9LHodD0cOKcfqGZKOMdLR3D5vwj4vXCuDJgiurBzrWqnJt0e4fZGGOSgYo"
+              target="_blank"
+            >
+              <img src={maxIcon} height="48" width="48" alt="Макс" />
+            </a>
           </Button>
           <Button className={classes.callButton}>
-            <span className={classes.callText}>Позвонить</span>
-            <img
-              className={classes.callIcon}
-              src={callIcon}
-              height="48"
-              width="48"
-              alt="Позвонить нам"
-            />
+            <a href="tel:+79643749631">
+              <span className={classes.callText}>Позвонить</span>
+              <img
+                className={classes.callIcon}
+                src={callIcon}
+                height="48"
+                width="48"
+                alt="Позвонить нам"
+              />
+            </a>
           </Button>
         </div>
       </Container>

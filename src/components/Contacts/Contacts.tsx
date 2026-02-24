@@ -50,12 +50,21 @@ export default function Contacts() {
             />
           </picture>
           <div className={classes.buttonsContainer}>
-            <Button className={classes.callButton}>Позвонить</Button>
-            <Button className={classes.iconButton}>
-              <img src={telegramIcon} alt="Телеграм" width="80" height="80" />
+            <Button className={classes.callButton}>
+              <a href="tel:+79643749631">Позвонить</a>
             </Button>
             <Button className={classes.iconButton}>
-              <img src={maxIcon} alt="Макс" width="80" height="80" />
+              <a href="https://t.me/mihail_shadow_project" target="_blank">
+                <img src={telegramIcon} alt="Телеграм" width="80" height="80" />
+              </a>
+            </Button>
+            <Button className={classes.iconButton}>
+              <a
+                href="https://max.ru/u/f9LHodD0cOKcfqGZKOMdLR3D5vwj4vXCuDJgiurBzrWqnJt0e4fZGGOSgYo"
+                target="_blank"
+              >
+                <img src={maxIcon} alt="Макс" width="80" height="80" />
+              </a>
             </Button>
           </div>
         </div>
