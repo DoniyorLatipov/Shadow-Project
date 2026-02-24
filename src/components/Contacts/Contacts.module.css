@@ -74,6 +74,11 @@
   margin-right: 10px;
 }
 
+.callButton a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .iconButton {
   width: 80px !important;
   height: 80px !important;

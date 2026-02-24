@@ -40,6 +40,11 @@
   font-size: 24px;
 }
 
+.callButton a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .hero {
     background-position: center center;

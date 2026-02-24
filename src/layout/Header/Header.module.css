@@ -38,6 +38,11 @@
   margin-left: 17px;
 }
 
+.callButton a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .callIcon {
   display: none;
 }
