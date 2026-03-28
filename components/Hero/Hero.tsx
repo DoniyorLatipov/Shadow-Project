@@ -1,3 +1,5 @@
+'use client';
+
 import classes from './Hero.module.css';
 import Container from '../../UI/Container/Container';
 import Button from '../../UI/Buttons/Button';
@@ -11,9 +13,9 @@ export default function Hero() {
           Работаем с готовыми потолками, сложными случаями и профилем EuroKRAAB по Санкт-Петербургу
           и Ленинградской области
         </p>
-        <Button className={classes.callButton}>
-          <a href="tel:+79643749631">Позвонить</a>
-        </Button>
+        <a href="tel:+79643749631">
+          <Button className={classes.callButton}>Позвонить</Button>
+        </a>
       </Container>
     </div>
   );

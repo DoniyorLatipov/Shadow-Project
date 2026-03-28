@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import classes from './Services.module.css';
 import Marquee from '../Marquee/Marquee';
@@ -16,9 +18,15 @@ export default function Services() {
         <AnchorButton href="#services" className={classes.anchorButtonToServices}>
           Услуги
         </AnchorButton>
-        {services.map(({ title, descriptionList }) => (
-          <ServiceCard title={title} descriptionList={descriptionList} />
+
+        {services.map(({ title, descriptionList }, index) => (
+          <ServiceCard
+            key={index} // добавляем ключ, чтобы React не ругался
+            title={title}
+            descriptionList={descriptionList}
+          />
         ))}
+
         <AnchorButton href="#contacts" className={classes.anchorButtonToContacts}>
           Заказать
         </AnchorButton>

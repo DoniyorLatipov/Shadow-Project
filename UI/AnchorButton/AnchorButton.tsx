@@ -1,10 +1,10 @@
+'use client';
+
 import React from 'react';
 import { useLenis } from 'lenis/react';
 import clsx from 'clsx';
 
 import classes from './AnchorButton.module.css';
-
-import arrowDown from '../../assets/arrow-down-icon.svg';
 
 interface AnchorButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isUp?: boolean;
@@ -34,7 +34,7 @@ export default function AnchorButton({
     >
       {children}
       <img
-        src={arrowDown}
+        src="/assets/arrow-down-icon.svg"
         width="14"
         className={isUp ? classes.imgUp : ''}
         alt={`Стрелка ${isUp ? 'вверх' : 'вниз'}`}

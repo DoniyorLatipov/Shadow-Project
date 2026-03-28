@@ -1,14 +1,10 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import classes from './Header.module.css';
 
 import Container from '../../UI/Container/Container';
 import Button from '../../UI/Buttons/Button';
-
-import logoDesktop from '../../assets/logo.svg';
-import logoMobile from '../../assets/logo-width.svg';
-import telegramIcon from '../../assets/telegram-icon.svg';
-import maxIcon from '../../assets/max-icon.svg';
-import callIcon from '../../assets/call-icon.svg';
 
 import clsx from 'clsx';
 
@@ -17,11 +13,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setIsActive(true);
-      } else {
-        setIsActive(false);
-      }
+      setIsActive(window.scrollY > 200);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -36,9 +28,9 @@ export default function Header() {
       <Container maxWidth="1780px" className={classes.headerContainer}>
         <a href="/">
           <picture>
-            <source media="(max-width: 640px)" srcSet={logoMobile} />
+            <source media="(max-width: 640px)" srcSet="/assets/logo-width.svg" />
             <img
-              src={logoDesktop}
+              src="/assets/logo.svg"
               className={classes.logo}
               width="240"
               height="77"
@@ -47,31 +39,32 @@ export default function Header() {
           </picture>
         </a>
         <div className={classes.buttonContainer}>
-          <Button className={classes.iconButton}>
-            <a href="https://t.me/mihail_shadow_project" target="_blank">
-              <img src={telegramIcon} height="48" width="48" alt="Телеграм" />
-            </a>
-          </Button>
-          <Button className={classes.iconButton}>
-            <a
-              href="https://max.ru/u/f9LHodD0cOKcfqGZKOMdLR3D5vwj4vXCuDJgiurBzrWqnJt0e4fZGGOSgYo"
-              target="_blank"
-            >
-              <img src={maxIcon} height="48" width="48" alt="Макс" />
-            </a>
-          </Button>
-          <Button className={classes.callButton}>
-            <a href="tel:+79643749631">
+          <a href="https://t.me/mihail_shadow_project" target="_blank" rel="noreferrer">
+            <Button className={classes.iconButton}>
+              <img src="/assets/telegram-icon.svg" height="48" width="48" alt="Телеграм" />
+            </Button>
+          </a>
+          <a
+            href="https://max.ru/u/f9LHodD0cOKcfqGZKOMdLR3D5vwj4vXCuDJgiurBzrWqnJt0e4fZGGOSgYo"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button className={classes.iconButton}>
+              <img src="/assets/max-icon.svg" height="48" width="48" alt="Макс" />
+            </Button>
+          </a>
+          <a href="tel:+79643749631">
+            <Button className={classes.callButton}>
               <span className={classes.callText}>Позвонить</span>
               <img
                 className={classes.callIcon}
-                src={callIcon}
+                src="/assets/call-icon.svg"
                 height="48"
                 width="48"
                 alt="Позвонить нам"
               />
-            </a>
-          </Button>
+            </Button>
+          </a>
         </div>
       </Container>
     </div>

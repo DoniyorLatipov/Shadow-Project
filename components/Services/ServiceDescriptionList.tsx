@@ -1,3 +1,5 @@
+'use client';
+
 import classes from './Services.module.css';
 
 interface IconProps {

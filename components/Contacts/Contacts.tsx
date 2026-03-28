@@ -1,10 +1,8 @@
+'use client';
+
 import classes from './Contacts.module.css';
 import Container from '../../UI/Container/Container';
 import Button from '../../UI/Buttons/Button';
-
-import footerLogo from '../../assets/logo-footer.svg';
-import telegramIcon from '../../assets/telegram-icon.svg';
-import maxIcon from '../../assets/max-icon.svg';
 
 import clsx from 'clsx';
 
@@ -39,33 +37,38 @@ export default function Contacts() {
             </li>
           </ul>
         </div>
+
         <div className={classes.logoBlock}>
           <picture>
             <img
-              src={footerLogo}
+              src="/assets/logo-footer.svg"
               className={classes.logo}
               width="790"
               height="275"
               alt="Shadow Project"
             />
           </picture>
+
           <div className={classes.buttonsContainer}>
-            <Button className={classes.callButton}>
-              <a href="tel:+79643749631">Позвонить</a>
-            </Button>
-            <Button className={classes.iconButton}>
-              <a href="https://t.me/mihail_shadow_project" target="_blank">
-                <img src={telegramIcon} alt="Телеграм" width="80" height="80" />
-              </a>
-            </Button>
-            <Button className={classes.iconButton}>
-              <a
-                href="https://max.ru/u/f9LHodD0cOKcfqGZKOMdLR3D5vwj4vXCuDJgiurBzrWqnJt0e4fZGGOSgYo"
-                target="_blank"
-              >
-                <img src={maxIcon} alt="Макс" width="80" height="80" />
-              </a>
-            </Button>
+            <a href="tel:+79643749631">
+              <Button className={classes.callButton}>Позвонить</Button>
+            </a>
+
+            <a href="https://t.me/mihail_shadow_project" target="_blank" rel="noreferrer">
+              <Button className={classes.iconButton}>
+                <img src="/assets/telegram-icon.svg" alt="Телеграм" width="80" height="80" />
+              </Button>
+            </a>
+
+            <a
+              href="https://max.ru/u/f9LHodD0cOKcfqGZKOMdLR3D5vwj4vXCuDJgiurBzrWqnJt0e4fZGGOSgYo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className={classes.iconButton}>
+                <img src="/assets/max-icon.svg" alt="Макс" width="80" height="80" />
+              </Button>
+            </a>
           </div>
         </div>
       </Container>
